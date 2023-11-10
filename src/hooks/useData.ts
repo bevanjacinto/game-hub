@@ -9,7 +9,7 @@ interface FetchResponse<T>{
     results: T[]
 }
 
-const usedata = <T>(endpoint: string, deps?: any[], requestConfig?: AxiosRequestConfig ) => {
+const usedata = <T>(endpoint: string, deps: any[], requestConfig?: AxiosRequestConfig ) => {
     const [data, setData] = useState<T[]>([]);
     const [error, setError] = useState("");
     const [isLoading, setLoading] = useState(false);
