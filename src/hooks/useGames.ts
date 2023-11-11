@@ -23,6 +23,7 @@ useData<Game>('/games',[gameQuery], {
   params: { 
   genres: gameQuery.genre?.id, 
   parent_platforms: gameQuery.platform?.id,
+  ordering: gameQuery.sortOrder
 }}, );
 
 export default useGames
