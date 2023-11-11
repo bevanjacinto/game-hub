@@ -30,7 +30,6 @@ const GameGrid = ({ gameQuery }: Props) => {
             </GameCardContainer>
           ))}
         {data.map((game) => {
-          console.log(game);
           return (
             <>
               <GameCardContainer key={game.id}>
